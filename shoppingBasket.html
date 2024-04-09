@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping basket - VESTIS Philippines</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Karla:wght@200;300&family=Mulish:wght@200;400&family=PT+Sans&family=Pacifico&family=Shizuru&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6fa3bd69d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/shoppingBasket.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="logo">
+        <a href="./index.html"><img
+          src="https://cdn.discordapp.com/attachments/755793466751058070/1227239633520300123/434651909_1161974714999676_6814228431771251564_n.png?ex=6627aef9&is=661539f9&hm=11af604260b2e51efb162fbe6a961b10277f83dfb33c8dcfd38197bf786124ad&"
+          alt="zaralogo"
+        /></a>
+        
+      </div>
+      <div id="help">
+        <!-- <a href="./login.html"> <div>LOGIN</div></a> -->
+       <a href="./zarahelp.html"><div>HELP</div></a>
+        
+      </div>
+    </nav>
+
+    <!-- <div id="items">
+        <p>YOUR BASKET IS EMPTY</p>
+    </div> -->
+
+    <div id="bag">
+      <h3>SHOPPING BAG</h3>
+      <p><span id="cartLen"> </span> ITEM</p>
+    </div>
+    <div id="items"></div>
+
+    <div id="card">
+      <div>
+        <div id="price">TOTAL : <span id="total">0</span></div>
+        <button onclick="proceed()">
+          CONTINUE
+        </button>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script type="module">
+  import { footers } from "./components/footer.js";
+  let footer = document.getElementById("footer");
+  footer.innerHTML = footers();
+</script>
+
+<script src="./scripts/shoppingBasket.js"></script>
